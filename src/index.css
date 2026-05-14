@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── DARK (default) ─────────────────────────────────── */
+:root {
+  --bg: #080808;
+  --bg-2: #0f0f0f;
+  --bg-card: #111111;
+  --border: #1e1e1e;
+  --border-hover: #2e2e2e;
+  --text: #d4d4d4;
+  --text-muted: #5a5a5a;
+  --text-dim: #888888;
+  --text-bright: #f5f5f5;
+  --nav-bg: rgba(8, 8, 8, 0.88);
+  --accent: #a78bfa;
+  --accent-2: #c4b5fd;
+  --accent-dim: rgba(167, 139, 250, 0.06);
+  --accent-glow: rgba(167, 139, 250, 0.12);
+  --accent-border: rgba(167, 139, 250, 0.3);
+  --accent-border-hover: rgba(167, 139, 250, 0.55);
+  --scrollbar-thumb: #2e2e2e;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --radius: 8px;
+  --max-w: 780px;
+}
+
+/* ── LIGHT ──────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg: #f8f8f8;
+  --bg-2: #f0f0f0;
+  --bg-card: #ffffff;
+  --border: #e5e5e5;
+  --border-hover: #cccccc;
+  --text: #444444;
+  --text-muted: #aaaaaa;
+  --text-dim: #777777;
+  --text-bright: #111111;
+  --nav-bg: rgba(248, 248, 248, 0.9);
+  --accent: #7c3aed;
+  --accent-2: #9333ea;
+  --accent-dim: rgba(124, 58, 237, 0.06);
+  --accent-glow: rgba(124, 58, 237, 0.14);
+  --accent-border: rgba(124, 58, 237, 0.28);
+  --accent-border-hover: rgba(124, 58, 237, 0.5);
+  --scrollbar-thumb: #cccccc;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+::selection { background: var(--accent-glow); color: var(--accent); }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
