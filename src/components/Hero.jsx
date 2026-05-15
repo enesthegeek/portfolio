@@ -40,9 +40,9 @@ export default function Hero() {
       <div className="hero-socials hero-anim" style={{ animationDelay: '760ms' }}>
         <span className="hero-socials-label">find me on</span>
         {[
-          { label: 'GitHub', href: '#', icon: '↗' },
-          { label: 'LinkedIn', href: '#', icon: '↗' },
-          { label: 'Twitter', href: '#', icon: '↗' },
+          { label: 'GitHub', href: 'https://github.com/enesthegeek', icon: '↗' },
+          { label: 'LinkedIn', href: 'https://www.linkedin.com/in/enes-soyturk', icon: '↗' },
+          { label: 'Twitter', href: 'https://x.com/enesthegeek', icon: '↗' },
         ].map(({ label, href, icon }) => (
           <a key={label} href={href} className="social-link">
             {label} {icon}
