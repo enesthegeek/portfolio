@@ -44,7 +44,7 @@ export default function Hero() {
           { label: 'LinkedIn', href: 'https://www.linkedin.com/in/enes-soyturk', icon: '↗' },
           { label: 'Twitter', href: 'https://x.com/enesthegeek', icon: '↗' },
         ].map(({ label, href, icon }) => (
-          <a key={label} href={href} className="social-link">
+          <a key={label} href={href} className="social-link" target="_blank" rel="noreferrer">
             {label} {icon}
           </a>
         ))}
