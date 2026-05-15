@@ -1,5 +1,6 @@
 import './App.css'
 import { useTheme } from './hooks/useTheme'
+import { Analytics } from '@vercel/analytics/react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -24,6 +25,7 @@ export default function App() {
         <Contact />
         <Footer />
       </main>
+      <Analytics />
     </>
   )
 }
